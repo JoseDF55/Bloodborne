@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cacería Sangrienta</title>
+  <link rel="stylesheet" href="tilin.css">
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      text-align: center;
+      border-radius: 10px;
+      margin: 1rem auto;
+    }
+
+    nav button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #880000;
+    }
+
+    section {
+      display: none;
+      padding: 1rem;
+      animation: fadeIn 0.6s ease-in;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .foto {
+      flex: 1 1 calc(33.333% - 1rem);
+      background-color: #222;
+      padding: 0.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .foto:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cacería Sangrienta</h1>
+  </header>
+
+  <nav>
+    <button onclick="showPage('intro')">Inicio</button>
+    <button onclick="showPage('criaturas')">Criaturas</button>
+    <button onclick="showPage('galeria')">Galería</button>
+    <button onclick="showPage('grandes')">Los Grandes</button>
+  </nav>
+
+  <main>
+    <section id="intro" class="active">
+      <h2>Introducción</h2>
+      <p>En una ciudad antigua y decadente llamada Yharnam, famosa por su avanzada medicina basada en una sangre milagrosa, los habitantes comienzan a enfermarse tras depender de ese "remedio". La cura, en lugar de sanar, desata una plaga que transforma lentamente a las personas en bestias sedientas de sangre.</p>
+      <p>Un forastero sin nombre llega a Yharnam en busca de esa sangre sanadora, pero al despertar tras recibir el tratamiento, descubre que está atrapado en una pesadilla. 
+      La ciudad está infestada de monstruos, criaturas deformes y cazadores locos que patrullan las calles durante una noche interminable conocida como "La Cacería".
+      Este forastero se convierte en cazador y comienza a desentrañar los secretos de Yharnam: la sangre milagrosa proviene de un antiguo ser cósmico, y el uso excesivo de esta ha corrompido tanto a la ciudad como a sus habitantes. La Iglesia de la Sanación, el poder religioso que administraba la sangre, estaba en realidad usando los restos de estas entidades divinas para manipular la evolución humana.</p>
+      <p>Mientras la noche avanza, el cazador descubre que la realidad misma está distorsionada. Hay planos oníricos, como el Sueño del Cazador, y criaturas provenientes de los llamados Grandes, seres de poder casi divino que existen más allá de la comprensión humana. Las pesadillas no son solo sueños, sino dimensiones reales influenciadas por estos seres antiguos.
+      Finalmente, el cazador debe tomar decisiones cruciales: aceptar la ignorancia y despertar, someterse a los Grandes, o trascender la humanidad. Dependiendo de su comprensión del cosmos, puede incluso transformarse en algo más que humano: un nuevo tipo de entidad, un hijo de los dioses cósmicos, nacido no del cuerpo, sino de la iluminación.</p>
+            </p></p>
+      <img src="https://i.pinimg.com/736x/77/d6/23/77d6237bb333543f604c8e78b3585979.jpg" alt="Portada Bloodborne">
+    </section>
+
+    <section id="criaturas">
+      <h2>Criaturas y enemigos</h2>
+      <p>Hubo una ciudad, antaño orgullosa, que se alzaba entre colinas brumosas y valles susurrantes. Yharnam la llamaban, y su nombre era pronunciado con respeto y temor en las tierras circundantes. Sus torres góticas rozaban el cielo como dedos implorantes, y en sus calles empedradas se escondía un secreto que prometía redención... y condena.</p>
+      <p>La sangre era su gloria. Una sustancia milagrosa, decían, brotaba de los sagrados manantiales bajo tierra. Se decía que curaba toda dolencia, que prolongaba la vida, que devolvía la esperanza a los moribundos. Los sacerdotes del culto de la Sanación ofrecían este don con manos enguantadas, y la ciudad prosperaba. Pero el don pronto se tornó en deuda.
+      Pues la sangre no curaba sin precio.</p>
+      <p>Primero fue un temblor en las manos. Luego, un brillo anormal en los ojos. Después, una sed. Una sed profunda, animal, que no podía apagarse con agua ni reposo. Los hombres comenzaron a cambiar. Aullaban bajo la luna. Caminaban erguidos solo por costumbre, mientras su carne se curvaba hacia formas imposibles. Se les encorvaban los huesos, se les alargaban los miembros, sus bocas se llenaban de colmillos, y sus almas... esas ya estaban perdidas.
+      Pronto las calles se llenaron de bestias que antaño habían sido padres, médicos, soldados y niños. Sus lamentos aún conservaban ecos de humanidad. Pero eran eso: ecos. Como voces atrapadas en un pozo sin fondo.</p>
+      Yharnam cayó sobre sí misma. Los pocos cuerdos que quedaban tomaron antorchas y espadas, proclamándose cazadores, y juraron librar a la ciudad de su propia sangre maldita. Pero por cada bestia que caía, otra se alzaba. Y los cazadores, uno a uno, también comenzaron a cambiar. Porque la sangre no distingue entre mártir y monstruo.
+      Dicen que la luna, roja como una herida abierta, nunca se apartó del cielo desde entonces. Que su luz trae consigo el llamado, y que bajo ella, los aullidos nunca cesan.
+      Yharnam no murió. Se pudre. Viva. Sufriendo.
+      Y todo comenzó con una promesa: que la sangre curaría.
+            </p></p>
+      <img src="https://i.pinimg.com/736x/a2/79/de/a279de130b3728b52ca8885776b99cde.jpg" alt="Criaturas">
+    </section>
+
+    <section id="galeria">
+      <h2>Más enemigos</h2>
+      <div class="galeria">
+        <div class="foto">
+          <img src="https://i.pinimg.com/736x/0a/4a/ca/0a4acac0de29b49c6e4c8a8e4290375a.jpg" alt="Amygdala">
+        </div>
+        <div class="foto">
+          <img src="https://i.pinimg.com/736x/fb/e3/24/fbe324127d8216f9d38dccb0f3049f73.jpg" alt="Enemigo 2">
+        </div>
+        <div class="foto">
+          <img src="https://i.pinimg.com/736x/d4/40/cb/d440cb63e466330dbf3932df949e0d36.jpg" alt="Enemigo 3">
+          <p>No era un demonio, aunque los exorcistas que osaban acercarse a la Capilla de la Pesadilla pensaban lo contrario. No era un dios, aunque los locos que le ofrecían plegarias clamaban haber recibido visiones. Amygdala era algo más: un centinela caído del cielo, nacido de un conocimiento que ninguna mente humana debía rozar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="grandes">
+      <h2>Los Grandes y el Sueño del Cazador</h2>
+      <p>El jugador descubre la existencia de entidades cósmicas conocidas como "Los Grandes"... </p>
+      <img src="https://i.pinimg.com/736x/4e/37/3f/4e373f465ccc9e3dde599faf363ec1e7.jpg" alt="Los Grandes">
+
+      <p> Los Sueños del Cosmos</p>
+       
+        
+        <p>Capítulo I: La bruma sobre Byrgenwerth</p>
+        
+        <p>La niebla se extendía como un sudario sobre el lago Moonside, donde las ruinas del otrora ilustre Colegio Byrgenwerth dormían en un silencio de siglos. Las ramas de los árboles se alzaban como dedos de cadáveres hacia un cielo plomizo, y el viento, helado y huérfano, murmuraba secretos que no eran de este mundo.</p>
+        
+        <p>Allí, bajo las losas húmedas del antiguo archivo, latía aún el eco de una voluntad impía: la sed del conocimiento prohibido. En vida, el erudito Willem había susurrado: “Temed lo viejo, buscad ojos en vuestro interior”. Pero pocos entendieron que su clamor no era de advertencia, sino de invitación.</p>
+        
+        <p>Capítulo II: Los hijos del abismo</p>
+        
+          <p>Allí donde la ciencia no alcanza, los Grandes escuchan. Entidades más allá del tiempo y la carne, tejidas con hilos de luna y pensamientos deformes, que acechaban desde los confines del vacío astral.</p>
+        
+            <p>Ebrietas, la hija del cosmos, lloraba sangre en su jardín olvidado. Fue abandonada por los suyos, como una diosa caída, su mente fracturada por el eco de plegarias nunca contestadas. Y sin embargo, seguía dando, como una madre enferma, su sangre sagrada a los ministros de la Iglesia de la Sanación.</p>
+        
+        En lo alto de Yharnam, el orfanato oculto paría engendros deformes: niños que no lloraban, porque sus gargantas eran colmillos. Micolash, el loco, los guiaba en sus sueños febriles, danzando entre bibliotecas y jaulas, invocando a Mergo, el sin-nombre, que sólo sabía gritar.</p>
+        
+        <p>Capítulo III: La luna pálida</p>
+        
+        <p>Cuando la noche de la cacería cayó por primera vez, no fue con estrépito, sino con un susurro. Las lámparas se apagaron una a una. El sueño del cazador comenzó.
+        
+        Gehrman, el primero, enterró su humanidad junto con los cuerpos de sus víctimas. Bajo el jardín de las flores lunares, su alma quedó atada a una voluntad que no era suya: la de la Presencia Lunar, un Gran dios sin rostro, que tejía el destino como una araña teje su tela, esperando pacientemente la caída de cada cazador.</p>
+        
+        <p>Capítulo IV: El dulce horror del despertar</p>
+        
+        <p>Y en el corazón de todo, la Verdad. No la de los hombres, sino la del ojo que todo lo ve. Laurence, traidor a Byrgenwerth, abrazó el fuego de la bestialidad en su desesperada búsqueda de divinidad. El cáliz fue abierto. Las profundidades fueron profanadas.</p>
+        
+        <p>En los rincones más oscuros de Pthumeru, donde la reina Yharnam llora eternamente por su hijo muerto-nacido, el eco de los Grandes se hace carne. El conocimiento mata la cordura, pero da a luz a los ojos invisibles.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fanpage creada por un cazador de Yharnam. Imágenes © FromSoftware.</p>
+  </footer>
+
+  <script>
+    function showPage(sectionId) {
+      const sections = document.querySelectorAll("main section");
+      sections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(sectionId).classList.add("active");
+    }
+  </script>
+</body>
+</html>
